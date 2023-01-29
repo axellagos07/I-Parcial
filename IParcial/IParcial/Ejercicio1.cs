@@ -31,7 +31,7 @@ namespace IParcial
         {
 
         }
-
+        decimal sumaTotal=0;
         private void SumarButton_Click(object sender, EventArgs e)
         {
             //Variables 
@@ -39,11 +39,36 @@ namespace IParcial
             decimal numero1 = Convert.ToDecimal(Numero1TextBox.Text);
             decimal numero2 = Convert.ToDecimal(Numero2TextBox.Text);
 
-            decimal resultado = numero1 + numero2;
+            //decimal resultado = numero1 + numero2;
 
             //MessageBox.Show("La suma es:" + resultado);
 
-            Resultadolabel.Text = Convert.ToString(resultado);
+            //Resultadolabel.Text = Convert.ToString(resultado);
+
+
+            //sumar(numero1, numero2);
+            sumaTotal = Sumatoria(numero1, numero2);
+            MessageBox.Show("La suma es: "+ sumaTotal,"Mensaje",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+        }
+        //Procedimiento
+        private void sumar(decimal num1, decimal num2)
+        {
+            sumaTotal = num1 + num2;
+        }
+
+        //Función
+
+        private decimal Sumatoria(decimal num1, decimal num2) 
+        {
+            decimal n1, n2, suma;
+            n1 = num1;
+            n2 = num2;
+
+            suma = num1 + num2;
+      
+            return suma;
+
 
         }
 

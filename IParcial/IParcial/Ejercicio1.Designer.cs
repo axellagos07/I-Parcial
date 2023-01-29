@@ -92,11 +92,12 @@
             // Resultadolabel
             // 
             this.Resultadolabel.AutoSize = true;
+            this.Resultadolabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.Resultadolabel.Location = new System.Drawing.Point(449, 125);
             this.Resultadolabel.Name = "Resultadolabel";
-            this.Resultadolabel.Size = new System.Drawing.Size(35, 13);
+            this.Resultadolabel.Size = new System.Drawing.Size(55, 13);
             this.Resultadolabel.TabIndex = 6;
-            this.Resultadolabel.Text = "label4";
+            this.Resultadolabel.Text = "Resultado";
             // 
             // Ejercicio1
             // 
